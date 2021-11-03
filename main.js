@@ -31,12 +31,9 @@ myButton.onclick = (event) => {
 
 const eliminar = () => {
     
-    let botones = document.getElementsByClassName("remove");
-    for (let i = 0; i < botones.length; i++) {
-        botones[i].onclick = function() {
-        
+    for (let i = 0; i < liReferences.length; i++) {
+        liReferences[i].onclick = function() {
             liReferences[i].remove()
-            
         }
         
     }
